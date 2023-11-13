@@ -28,6 +28,11 @@ class view : AppCompatActivity() {
 
         viewList = binding.listId
 
+        binding.backBtn.setOnClickListener {
+            val intent = Intent(applicationContext, MainActivity::class.java)
+            startActivity(intent)
+        }
+
         val category = intent.getStringExtra("category")
 
         val query = if (category != null) {

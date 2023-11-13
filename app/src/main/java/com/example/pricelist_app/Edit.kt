@@ -33,6 +33,11 @@ class Edit : AppCompatActivity() {
         originalName = binding.editProdId.text.toString()
         originalPrice = binding.editPriceId.text.toString()
 
+        binding.backBtn2.setOnClickListener {
+            val intent = Intent(applicationContext, MainActivity::class.java)
+            startActivity(intent)
+        }
+
         binding.btnEditId.setOnClickListener {
             editrec()
         }

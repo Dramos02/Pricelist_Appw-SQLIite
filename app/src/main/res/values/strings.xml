@@ -17,6 +17,7 @@
     <string name="editBtn">EDIT</string>
     <string name="deleteBtn">DELETE</string>
     <string name="pricelistTitle">PRODUCT LIST</string>
+    <string name="mainmenuBtn">BACK TO MAIN</string>
 
 
 </resources>
