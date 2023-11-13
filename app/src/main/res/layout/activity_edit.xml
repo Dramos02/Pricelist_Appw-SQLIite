@@ -51,6 +51,7 @@
         android:layout_gravity="center"
         android:fontFamily="@font/nextsunday"
         android:text="TextView"
+        android:textColor="#B61D1D"
         android:textSize="20sp" />
   </androidx.cardview.widget.CardView>
 
@@ -137,16 +138,4 @@
 
   </androidx.cardview.widget.CardView>
 
-  <Button
-      android:id="@+id/backBtn2"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_marginTop="48dp"
-      android:fontFamily="@font/nextsunday"
-      android:text="@string/mainmenuBtn"
-      android:textSize="20sp"
-      app:layout_constraintEnd_toEndOf="@+id/btnEditView"
-      app:layout_constraintHorizontal_bias="0.521"
-      app:layout_constraintStart_toStartOf="@+id/btnEditView"
-      app:layout_constraintTop_toBottomOf="@+id/btnEditView" />
 </androidx.constraintlayout.widget.ConstraintLayout>

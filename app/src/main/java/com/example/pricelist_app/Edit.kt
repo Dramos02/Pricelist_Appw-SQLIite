@@ -33,10 +33,6 @@ class Edit : AppCompatActivity() {
         originalName = binding.editProdId.text.toString()
         originalPrice = binding.editPriceId.text.toString()
 
-        binding.backBtn2.setOnClickListener {
-            val intent = Intent(applicationContext, MainActivity::class.java)
-            startActivity(intent)
-        }
 
         binding.btnEditId.setOnClickListener {
             editrec()
@@ -69,8 +65,7 @@ class Edit : AppCompatActivity() {
                         Toast.LENGTH_SHORT
                     ).show()
                     finish()
-                    val intentback = Intent(applicationContext, MainActivity::class.java)
-                    startActivity(intentback)
+
                 } catch (exception: Exception) {
                     Toast.makeText(
                         applicationContext,
@@ -86,11 +81,8 @@ class Edit : AppCompatActivity() {
                 ).show()
             }
         } else {
-            Toast.makeText(
-                applicationContext,
-                "Please Edit the Product Name or the Product Price",
-                Toast.LENGTH_SHORT
-            ).show()
+            val intentback = Intent(applicationContext, MainActivity::class.java)
+            startActivity(intentback)
         }
     }
 
@@ -121,6 +113,8 @@ class Edit : AppCompatActivity() {
 
         builder.setNegativeButton("No") { dialog, _ ->
             dialog.dismiss()
+            val intentback = Intent(applicationContext, MainActivity::class.java)
+            startActivity(intentback)
         }
 
         val dialog = builder.create()

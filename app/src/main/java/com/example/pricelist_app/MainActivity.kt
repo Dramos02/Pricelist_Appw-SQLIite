@@ -35,7 +35,7 @@ class MainActivity : AppCompatActivity() {
             if (!binding.foodBtn.isChecked && !binding.drinkBtn.isChecked && !binding.otherBtn.isChecked) {
                 Toast.makeText(
                     applicationContext,
-                    "Please Don't Leave it Blank/Empty",
+                    "Please Don't Leave category blank",
                     Toast.LENGTH_SHORT
                 ).show()
             } else {
@@ -103,7 +103,7 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(applicationContext, "Record Added Unsuccessfully", Toast.LENGTH_SHORT).show()
             }
         } else {
-            Toast.makeText(applicationContext, "Please Fill up all the Fields", Toast.LENGTH_SHORT).show()
+            Toast.makeText(applicationContext, "Please Fill up Product Name/Price", Toast.LENGTH_SHORT).show()
         }
     }
     private fun viewCategory(category: String) {
