@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2"
+    android:backgroundTint="#4039433A"
+    android:backgroundTintMode="src_over"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewInfo"
+        android:layout_width="325dp"
+        android:layout_height="220dp"
+        android:layout_marginTop="40dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <EditText
+                android:id="@+id/product_id"
+                android:layout_width="match_parent"
+                android:layout_height="74dp"
+                android:ems="10"
+                android:hint="@string/productHint"
+                android:inputType="textPersonName" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="45dp" />
+
+            <EditText
+                android:id="@+id/price_id"
+                android:layout_width="match_parent"
+                android:layout_height="74dp"
+                android:ems="10"
+                android:hint="@string/priceHint"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/radiobtnView"
+        android:layout_width="325dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="25dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="25dp"
+        app:layout_constraintEnd_toEndOf="@+id/cardViewInfo"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/cardViewInfo"
+        app:layout_constraintTop_toBottomOf="@+id/cardViewInfo">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/foodBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:fontFamily="@font/nextsunday"
+                android:text="@string/foodCat"
+                android:textAlignment="viewStart"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/drinkBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:fontFamily="@font/nextsunday"
+                android:text="@string/drinkCat"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/otherBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:fontFamily="@font/nextsunday"
+                android:text="@string/otherCat"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/btnView"
+        android:layout_width="165dp"
+        android:layout_height="300dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/radiobtnView"
+        app:layout_constraintStart_toStartOf="@+id/radiobtnView"
+        app:layout_constraintTop_toBottomOf="@+id/radiobtnView"
+        app:layout_constraintVertical_bias="0.246">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/addBtn"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:backgroundTint="#388E3C"
+                android:fontFamily="@font/nextsunday"
+                android:text="@string/addBtn"
+                android:textColor="#EFF4F2"
+                android:textColorHighlight="#FFFFFF"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/viewBtn"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:backgroundTint="#303F9F"
+                android:fontFamily="@font/nextsunday"
+                android:text="@string/viewAll"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/foodFilterBtn"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:backgroundTint="#E64A19"
+                android:fontFamily="@font/nextsunday"
+                android:text="@string/filterFood"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/drinkFilterBtn"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:backgroundTint="#0288D1"
+                android:fontFamily="@font/nextsunday"
+                android:text="@string/filterDrink"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/otherFilterBtn"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:backgroundTint="#0097A7"
+                android:fontFamily="@font/nextsunday"
+                android:text="@string/filterOther"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

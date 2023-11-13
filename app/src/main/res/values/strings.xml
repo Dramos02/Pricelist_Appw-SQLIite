@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">PriceList_App</string>
+    <string name="titleApp">PriceList App \n with SQLlite</string>
+    <string name="copyrights">Copyrights by @github/Dramos02 - Dominic Ramos</string>
+    <string name="productHint">Name of Product</string>
+    <string name="priceHint">Price</string>
+    <string name="addBtn">ADD</string>
+    <string name="viewBtn">VIEW</string>
+    <string name="foodCat">Food</string>
+    <string name="drinkCat">Drink</string>
+    <string name="otherCat">Other</string>
+    <string name="viewAll">All Products</string>
+    <string name="filterFood">Filter Food</string>
+    <string name="filterDrink">Filter Drink</string>
+    <string name="filterOther">Filter Other</string>
+    <string name="editTitle">EDIT PRODUCT</string>
+    <string name="editBtn">EDIT</string>
+    <string name="deleteBtn">DELETE</string>
+    <string name="pricelistTitle">PRODUCT LIST</string>
+
+
+</resources>
